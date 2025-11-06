@@ -1071,6 +1071,7 @@ export default {
 			alpn = url.searchParams.get('alpn') || (xhttp ? "h3%2Ch2" : alpn);
 			隧道版本作者 = url.searchParams.get(atob('ZWRnZXR1bm5lbA==')) || url.searchParams.get(atob('ZXBlaXVz')) || 隧道版本作者;
 			获取代理IP = url.searchParams.get('proxyip') || 'false';
+			EndPS = url.searchParams.get('PS') || EndPS;
 
 			if (url.searchParams.has('alterid')) {
 				协议类型 = 'VMess';
@@ -1463,3 +1464,4 @@ export default {
 		}
 	}
 };
+
